@@ -117,7 +117,7 @@ img {
 .err-data {
 	color: #ff5722;
 }
-.layui-form-checkbox {
+.layui-form-checkbox[lay-skin=none] {
 	margin: 2px;
 }
 .layui-form-checkbox>.lay-skin-checkcard {
