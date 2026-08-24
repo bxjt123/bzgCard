@@ -11,6 +11,10 @@ body {
 	color: #333;
 	display: flex;
 	flex-direction: column;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
 .header {
 	padding: 0 20px;
