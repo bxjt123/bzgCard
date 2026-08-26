@@ -19,13 +19,18 @@
 					<i class="layui-icon layui-icon-search"></i>搜索
 				</button>
 			</div>
-			<span id="version">更新日志</span>
+			<div class="header-second">
+				<span id="version">更新日志</span>
+				<button class="layui-btn layui-btn-xs" id="showRemoveBtn">已下架配方</button>
+			</div>
 		</div>
-		<div id="mainContainer" class="layui-row layui-col-space20">
+		<div id="mainContainer">
 			<div id="statusIndicator" class="status">
 				<i class="layui-icon layui-icon-loading layui-anim layui-anim-rotate layui-anim-loop" style="font-size: 30px;"></i>
 				<p style="margin-top: 10px;">正在加载数据，请稍候……</p>
 			</div>
+			<div id="showTip"></div>
+			<div id="mainFormula" class="layui-row layui-col-space20"></div>
 		</div>
 		<div class="bottom">
 			<p>©2026 版权所有&nbsp;&nbsp;小红书:<a href="https://www.xiaohongshu.com/user/profile/5cea4bbd000000001801b0bf" target="_blank" rel="noopener">@南城小巷</a></p>
