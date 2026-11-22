@@ -40,14 +40,27 @@
 		</div>
 		<div id="searchFormBox">
 			<form class="layui-form" lay-filter="searchFilter">
-				<div class="layui-form-item">
-					<label class="layui-form-label">搜索配方：</label>
-					<div class="layui-input-block">
-						<input type="radio" name="searchMode" value="INCLUDE" title="含选中任一卡牌" checked>
-						<input type="radio" name="searchMode" value="EXCLUDE" title="不含选中的卡牌">
+				<div class="layui-row">
+					<div class="layui-col-xs12 layui-col-md7">
+						<div class="layui-form-item">
+							<label class="layui-form-label">搜索</label>
+							<div class="layui-input-block">
+								<input id="r1" type="radio" name="searchMode" value="INCLUDE" title="含选中任一卡牌" checked>
+								<input id="r2" type="radio" name="searchMode" value="EXCLUDE" title="不含选中的卡牌">
+							</div>
+						</div>
+					</div>
+					<div class="layui-col-xs12 layui-col-md5">
+						<div class="layui-form-item">
+							<label class="layui-form-label">筛选</label>
+							<div class="layui-input-block">
+								<input type="radio" name="filterMode" value="ALL" title="所有卡牌" lay-filter="filterFilter" checked>
+								<input type="radio" name="filterMode" value="DRAW" title="上架卡牌" lay-filter="filterFilter">
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="layui-form-item" style="margin-bottom: 0;">
+				<div class="layui-form-item">
 					<div id="checkboxContainer">卡牌加载中……</div>
 				</div>
 			</form>
